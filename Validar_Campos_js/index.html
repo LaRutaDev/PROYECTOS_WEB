@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="validaCampos.css">
+    <title>LA RUTAV DEV</title>
+  </head>
+  <body>
+    <main class="vh-100 d-flex align-items-center">
+      <div class="d-flex flex-column justify-content-between align-items-center container">
+        <h1 class="text-secondary text-centerm my-5">CONTACTA CONMIGO</h1>
+        <!-- DIV DE ERRORES -->
+        <div id="errores" class="w-50"></div>
+        <form class="text-dark fw-light w-50 h-100" id="formularioContacto">
+          <div class="d-flex flex-md-row flex-column justify-content-between align-items-center">
+            <div class="mb-3 w-45">
+              <label for="nombre">Nombre <span style="opacity: 0.7" class="text-muted">(requerido)</span></label>
+              <input type="text" id="nombre" class="form-control" data-requerido="true" required />
+            </div>
+
+            <div class="mb-3 w-45">
+              <label for="apellidos">Apellidos <span style="opacity: 0.7" class="text-muted">(requerido)</span></label>
+              <input type="text" id="apellidos" class="form-control" data-requerido="true" required />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address">Dirección <span style="opacity: 0.7" class="text-muted">(requerido)</span></label>
+            <input type="text" id="address" class="form-control" data-requerido="true" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="email">Email <span style="opacity: 0.7" class="text-muted">(requerido)</span></label>
+            <input type="email" id="email" class="form-control" data-requerido="true" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="motivo">Motivo <span style="opacity: 0.7" class="text-muted">(requerido)</span></label>
+            <input type="text" id="motivo" class="form-control" data-requerido="true" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje">Mensaje <span style="opacity: 0.7" class="text-muted">(requerido)</span></label>
+            <textarea class="form-control" id="mensaje" data-requerido="true" required></textarea>
+          </div>
+
+          <div class="w-100 d-flex">
+            <button type="submit" id="btnEnviar" class="btn btn-primary w-50">Enviar</button>
+          </div>
+        </form>
+
+        <p class="mt-3 fw-lighter">
+          Si lo prefieres puedes escribirme directamente a <b>larutadev@outlook.com</b>
+        </p>
+
+      </div>
+    </main>
+
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./validaCampos.js" type="text/javascript"></script>
+  </body>
+</html>
